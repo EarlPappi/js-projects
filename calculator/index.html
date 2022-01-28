@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    
+    <link rel="stylesheet" href="css/light-mode.css" id="theme-link">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="output-con">
+
+            <div class="btn">
+                <button class="btn-toggle">Toggle</button>
+            </div>
+            <div class="in-con">
+                <h2 id="input">0</h2>
+            </div>
+
+        </div>
+
+        <div class="charac">
+            <div class="charac-con">
+                <input type="button" data-action="addition" value="+" class="char" onclick="populateInput(this)">
+                <input type="button" data-action="subtract" value="-" class="char" onclick="populateInput(this)">
+                <input type="button" data-action="multiply" value="*" class="char" onclick="populateInput(this)">
+                <input type="button" data-action="divide" value="/" class="char" onclick="populateInput(this)">
+                <input type="button" value="9" class="char" onclick="populateInput(this)">
+                <input type="button" value="8" class="char" onclick="populateInput(this)">
+                <input type="button" value="7" class="char" onclick="populateInput(this)">
+                <input type="button" data-action="calculate" value="=" class="char row-span-4"
+                    onclick="populateInput(this)">
+                <input type="button" value="6" class="char" onclick="populateInput(this)">
+                <input type="button" value="5" class="char" onclick="populateInput(this)">
+                <input type="button" value="4" class="char" onclick="populateInput(this)">
+                <input type="button" value="3" class="char" onclick="populateInput(this)">
+                <input type="button" value="2" class="char" onclick="populateInput(this)">
+                <input type="button" value="1" class="char" onclick="populateInput(this)">
+                <input type="button" value="0" class="char" onclick="populateInput(this)">
+                <input type="button" data-action="decimal" value="." class="char" onclick="populateInput(this)">
+                <input type="button" data-action="clear" value="AC" class="char" onclick="populateInput(this)">
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- <script src="index.js"></script> -->
+    <script src="calc.js"></script>
+</body>
+
+</html>
