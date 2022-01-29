@@ -26,9 +26,6 @@ function populateInput(element){
     current = document.getElementById('input').innerHTML;
     character = element.getAttribute('value')
 
-    // // adding the character clicked to display on the input
-    // document.getElementById('input').innerHTML += character;
-
     // making AC to clear input
     if(character == 'AC'){
         document.getElementById('input').innerHTML = '0';
@@ -45,6 +42,12 @@ function populateInput(element){
     // making number 0 not to display when pressed at the first instance 
     if(current == '0'){
         document.getElementById('input').innerHTML = character;
+        return;
+    }
+
+    // remove last character 
+    if(character == '<'){
+        document.getElementById('input').innerHTML = document.getElementById('input').innerHTML.slice(0, -1);
         return;
     }
 
