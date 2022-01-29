@@ -1,5 +1,6 @@
 body{
     padding: 10%;color: rgb(189, 189, 189);
+    background-color: rgb(209, 209, 209);
 }
 
 
@@ -47,8 +48,8 @@ h2{
 
 .row-span-4{
     grid-column-start: 4;
-    grid-row-start: 2;
-    grid-row-end: span 4;
+    grid-row-start: 3;
+    grid-row-end: span 3;
     background-color: #319DFA;
     color: white;
 }
